@@ -1,0 +1,76 @@
+﻿html{
+	display: flex; justify-content: center; align-items: center;
+}
+
+body
+{
+	font-size:20px;
+}
+h1{
+	text-align: center;
+}
+.contenedor-contenido{
+	margin: 50px;
+}
+.titulo{
+	font-weight: bold;
+	font-size: 150%;
+	color: blue;
+}
+.caracteristicas{
+	font-weight: bold;
+	line-height: 2;
+}
+
+.texto{
+	font-weight: bold;
+	color:blue;
+	line-height: 2;
+}
+
+.descripcion{
+	line-height: 1.5;
+}
+
+.imagen{
+	float: left;
+	margin-right: -100px;
+}
+video{
+	height: 50%;
+	width: 50%;
+}
+
+
+@media screen and (min-width: 1024px){
+    .descripcion{
+		max-width: 1024px;
+	}
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    html{
+		font-size: 5rem;
+		box-sizing: border-box; /* Incluye padding/borde en el ancho */
+		margin: 0;
+		padding: 0;
+	}
+	.descripcion{
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width:600px){
+    html{
+		font-size: 4rem;
+	}
+	.imagen{
+		float: none;
+		display: flex; justify-content: center; align-items: center;
+		margin-right: 0;
+	}
+	video{
+	height: 45%;
+	width: 45%;
+	}
+}
